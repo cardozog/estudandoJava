@@ -1,0 +1,24 @@
+package application;
+
+import java.util.Scanner;
+
+import util.Calculator;
+
+public class Program {
+
+	public static void main(String[] args) {
+		double raio,circ,vol;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Entre com o raio: ");
+		raio = sc.nextDouble();
+		
+		circ = Calculator.circunferencia(raio);
+		vol= Calculator.volumeEsfera(raio);
+
+		System.out.printf("Circunferência: %.2f",circ);
+		
+		sc.close();
+	}
+
+}

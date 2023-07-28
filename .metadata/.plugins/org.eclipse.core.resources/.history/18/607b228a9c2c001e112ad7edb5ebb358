@@ -1,0 +1,10 @@
+package entities;
+
+public class Empregado {
+	public String nome;
+	public double salarioBruto,imposto;
+
+	public double salarioLiquido() {
+		return salarioBruto-imposto;
+	}
+}

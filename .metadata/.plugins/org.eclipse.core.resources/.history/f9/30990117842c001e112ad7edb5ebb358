@@ -1,0 +1,19 @@
+package application;
+import java.util.Scanner;
+import entities.Triangulo;
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		Triangulo x, y;
+		x= new Triangulo();
+		y=new Triangulo();
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Insira o lado A, B e C do triângulo X: ");
+		x.a=sc.nextDouble();
+
+	}
+
+}

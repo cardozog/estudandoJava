@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public int Exercicio1() {
+		int soma=0;
+		return soma;
+	}
+
+}

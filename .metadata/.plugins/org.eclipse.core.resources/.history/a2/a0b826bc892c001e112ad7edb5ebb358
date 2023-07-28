@@ -1,0 +1,15 @@
+package entities;
+
+public class Triangulo {
+	public double a,b,c,area;
+
+	//não recebe parametro porque só usamos parametros que estão aqui dentro da classe
+	public double calculaArea() {
+		double p,area;
+
+		p= (a+b+c)/2;
+		area = Math.sqrt(p * (p-a)*(p-b)*(p-c));
+
+		return area;
+	}
+}

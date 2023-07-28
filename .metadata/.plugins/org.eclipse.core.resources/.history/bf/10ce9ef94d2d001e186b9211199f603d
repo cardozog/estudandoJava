@@ -1,0 +1,19 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+//programa deve ler cotação do dólar, o valor de dólares que serão comprados 
+//a pessoa deve pagar 6% de imposto em cima do valor em dólares
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double cotacao,valorEmDolares, valorEmReais;
+
+	}
+
+}

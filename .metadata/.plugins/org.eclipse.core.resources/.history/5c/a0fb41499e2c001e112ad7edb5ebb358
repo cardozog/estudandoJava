@@ -1,0 +1,33 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Empregado;
+
+//lê os dados de um funcionário (nome, salário bruto e imposto) e mostra na tela o nome e o salário líquido.
+//depois disso, aumenta o salário bruto com base em uma porcentagem e mostra novamente os dados.
+
+public class Program {
+
+	public static void main(String[] args) {
+		Empregado empregado = new Empregado();
+		Scanner sc = new Scanner(System.in);
+		double salarioLiquido;
+
+		System.out.print("Nome do empregado: ");
+		empregado.nome=sc.next();
+
+		System.out.print("Salário bruto: R$");
+		empregado.salarioBruto=sc.nextDouble();
+
+		System.out.print("Impostos: R$");
+		empregado.imposto=sc.nextDouble();
+
+		salarioLiquido=empregado.salarioLiquido();
+
+		System.out.printf("Nome: %s | Salário Líquido R$%.2f",empregado.nome,salarioLiquido);
+
+
+	}
+
+}

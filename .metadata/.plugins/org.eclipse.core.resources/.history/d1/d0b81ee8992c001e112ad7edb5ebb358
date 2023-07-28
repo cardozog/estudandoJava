@@ -1,0 +1,16 @@
+package entities;
+
+public class Rectangle {
+	public double largura, comprimento;
+
+	public double area() {
+		return largura*comprimento;
+	}
+
+
+
+
+
+}
+
+

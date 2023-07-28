@@ -1,0 +1,18 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Empregado;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Empregado empregado = new Empregado();
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.print("Nome do empregado: ");
+		
+	}
+
+}

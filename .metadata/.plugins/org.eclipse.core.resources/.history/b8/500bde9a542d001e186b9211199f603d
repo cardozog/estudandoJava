@@ -1,0 +1,36 @@
+package entities;
+
+public class Product {
+	public String nome;
+	public double price;
+	public int quantity;
+
+	//isso é um construtor, ele é carregado no momento que instanciamos um objeto (usando new Project() por exemplo)
+	public Product(String nome, double price, int quantity) {
+		//usar esse this, a gente está se referindo ao ATRIBUTO do objeto, não à variavel local que por convenção tem o mesmo nome.
+		this.nome = name
+		
+		
+	}
+
+
+	//valor total em R$ que temos no estoque
+	public double totalValueInStock() {
+		return price * quantity;
+	}
+
+	//adicionar produtos à quantidade antiga.
+	public void addProducts(int quantity) {
+		this.quantity +=quantity;
+	}
+
+	//o this é usado pra referenciar o parâmetro dessa mesma classe, pra diferenciar do parâmetro da função
+	public void removeProducts(int quantity) {
+		this.quantity -=quantity;
+	}
+
+	public String toString() {
+		return "Produto: "+ nome+" | Preço: R$"+ price +" | Quantidade: " + quantity+" | Valor total em estoque: R$"+totalValueInStock();
+	}
+
+}

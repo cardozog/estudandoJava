@@ -1,0 +1,21 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Empregado;
+
+//lê os dados de um funcionário (nome, salário bruto e imposto) e mostra na tela o nome e o salário líquido.
+//
+
+public class Program {
+
+	public static void main(String[] args) {
+		Empregado empregado = new Empregado();
+		Scanner sc = new Scanner(System.in);
+
+
+		System.out.print("Nome do empregado: ");
+		empregado.nome=sc.next();
+	}
+
+}

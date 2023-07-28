@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		double A,x;
+
+		Scanner sc = new Scanner(System.in);
+		x=sc.nextDouble();
+		sc.close();
+		A = Math.sqrt(x);
+		System.out.println(A);
+		
+
+	}
+
+}

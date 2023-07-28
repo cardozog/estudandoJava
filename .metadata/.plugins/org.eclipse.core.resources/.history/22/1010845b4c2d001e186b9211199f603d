@@ -1,0 +1,27 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import util.Calculator;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		double raio,circ,vol;
+
+		
+		System.out.print("Entre com o raio: ");
+		raio = sc.nextDouble();
+		
+		circ = Calculator.circunferencia(raio);
+		vol= Calculator.volumeEsfera(raio);
+
+		System.out.printf("Circunferência: %.2f %n",circ);
+		System.out.printf("Volume: %.2f %n",vol);
+		sc.close();
+	}
+
+}

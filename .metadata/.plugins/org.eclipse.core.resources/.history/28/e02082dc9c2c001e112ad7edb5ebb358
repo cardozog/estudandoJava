@@ -1,0 +1,14 @@
+package entities;
+
+public class Empregado {
+	public String nome;
+	public double salarioBruto,imposto;
+
+	public double salarioLiquido() {
+		return salarioBruto-imposto;
+	}
+	
+	public void aumentarSalario(double percentual) {
+		salarioBruto += (salarioBruto*percentual)/100.0; 
+	}
+}

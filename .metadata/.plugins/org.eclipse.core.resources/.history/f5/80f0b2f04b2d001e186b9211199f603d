@@ -1,0 +1,10 @@
+package util;
+
+public class Calculator {
+	public static final double PI = Math.PI;
+	
+	public static double circunferencia(double raio) {
+		
+	}
+	
+}

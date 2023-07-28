@@ -1,0 +1,13 @@
+package application;
+
+public class Program {
+
+	//fazer um programa que leia a largura e comprimento de um retângulo 
+	//determine os valores de área, perímetro e diagonal.
+
+	public static void main(String[] args) {
+		double diagonal, perimetro, area;
+
+	}
+
+}

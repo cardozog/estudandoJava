@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+	public int Exercicio1(int num1, int num2) {
+		int soma=0;
+		
+		return soma;
+	}
+
+
+	public static void main(String[] args) {
+		int num1,num2,soma;
+		Scanner sc = new Scanner(System.in);
+
+		
+		System.out.print("Digite o primeiro e o segundo número separados por espaços para fazer uma soma: ");
+		num1 = sc.nextInt();
+		num2= sc.nextInt();
+		
+		soma= Exercicio1(num1,num2);
+	}
+	
+
+
+}

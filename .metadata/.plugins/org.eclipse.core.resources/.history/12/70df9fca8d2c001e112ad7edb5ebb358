@@ -1,0 +1,16 @@
+package entities;
+
+public class Product {
+	public String nome;
+	public double price;
+	public int quantity;
+	
+	
+	//valor total em R$ que temos no estoque
+	public double TotalValueInStock() {
+
+
+		
+		return price * quantity;
+	}
+}

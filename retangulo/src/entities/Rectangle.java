@@ -1,0 +1,20 @@
+package entities;
+
+public class Rectangle {
+	public double largura, comprimento;
+
+	public double area() {
+		return largura*comprimento;
+	}
+
+	public double perimetro() {
+		return (largura*2)+(comprimento*2);
+	}
+
+	public double diagonal() {
+
+		return Math.sqrt(Math.pow(largura,2)+Math.pow(comprimento,2));
+	}
+}
+
+

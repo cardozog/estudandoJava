@@ -1,0 +1,12 @@
+package application;
+
+import entities.Empregado;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Empregado empregado = new Empregado();
+
+	}
+
+}

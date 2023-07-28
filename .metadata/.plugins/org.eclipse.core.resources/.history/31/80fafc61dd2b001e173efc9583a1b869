@@ -1,0 +1,16 @@
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int y=32;
+		double x=10.35784;
+		System.out.println("Hello World");
+		//igualzinho no C pra mostrar duas casas decimais, mas a quebra de linha é diferente. ao invés de \n é %n
+		System.out.printf("%.2f%n",x);
+		System.out.print(y);
+		
+		Locale.setDefault(Locale.US);
+	}
+
+}
