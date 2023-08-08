@@ -1,22 +1,24 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Post {
 	private Date momentoPost;
 	private String tituloPost;
 	private String conteudo;
 	private Integer numeroLikes;
-
+	private List<Comentario> comentarios = new ArrayList<Comentario>();
 	public Post() {
 
 	}
 
-	public Post(Date momentoPost, String tituloPost, String conteudo, Integer numeroLikes) {
+	public Post(Date momentoPost, String tituloPost, String conteudo) {
 		this.momentoPost = momentoPost;
 		this.tituloPost = tituloPost;
 		this.conteudo = conteudo;
-		this.numeroLikes = numeroLikes;
+		this.numeroLikes = 0;
 	}
 
 	public Date getMomentoPost() {
@@ -47,10 +49,21 @@ public class Post {
 		return numeroLikes;
 	}
 
-	public void setNumeroLikes(Integer numeroLikes) {
-		this.numeroLikes = numeroLikes;
+	public void setNumeroLikes() {
+		this.numeroLikes++;
 	}
 
+	public List<Comentario> getComentario() {
+		return comentarios;
+	}
+
+	public void addComentario(Comentario comentario) {
+		comentarios.add(comentario);
+	}
+	
+	public void removeComentario(int idComentario) {
+		comentarios.remove(idComentario);
+	}
 
 
 }
