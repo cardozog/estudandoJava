@@ -18,7 +18,8 @@ public class Program {
 		Comentario comentario;
 
 		System.out.println("REDE SOCIAL??");
-
+		System.out.println("Faça o post agora:");
+		
 		
 		sc.close();
 	}
