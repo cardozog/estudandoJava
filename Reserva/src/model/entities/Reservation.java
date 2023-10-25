@@ -37,8 +37,21 @@ public class Reservation {
 
 
 	public void updateDates(Date checkIn, Date checkOut) {
+
+		if(!checkOut.after(checkIn)) {
+			throw new IllegalArgumentException("ERRO DE RESERVA: DATA DE CHECK-OUT DEVE SER APÓS DATA DE CHECK-IN") ;
+		}
+		Date now = new Date();
+		if(checkIn.before(now)|| checkOut.before(now)) {
+			throw new IllegalArgumentException("olha a merda ai");
+		}
+
+		if (!checkOut.after(checkIn)) {
+			throw new IllegalArgumentException( "ERRO DE RESERVA: DATA DE CHECK-OUT DEVE SER APÓS DATA DE CHECK-IN");
+		}
 		this.checkIn=checkIn;
 		this.checkOut=checkOut;
+		//não deu erro
 	}
 
 	@Override
